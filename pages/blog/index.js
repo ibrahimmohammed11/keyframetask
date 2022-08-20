@@ -3,7 +3,7 @@ import React from "react";
 import { signIn, useSession } from "next-auth/react";
 import { Loading } from "../../components/Loading/Loading";
 
-const About = () => {
+const Blog = () => {
   const { status } = useSession();
 
   if (status === "loading") {
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>about</title>
+        <title>Blog</title>
       </Head>
       <div className="min-h-screen text-center">
         <h1 className="text-3xl text-blue-700 my-5">Protected Page</h1>
@@ -31,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Blog;
